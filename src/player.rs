@@ -28,7 +28,7 @@ pub trait Guesser {
 }
 
 impl Guesser for Human {
-    fn guess(&mut self, too_high: bool) -> String {
+    fn guess(&mut self, _: bool) -> String {
         let mut curr_guess = String::new();
         io::stdin()
             .read_line(&mut curr_guess)
